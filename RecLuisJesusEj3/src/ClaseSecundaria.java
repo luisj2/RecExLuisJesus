@@ -11,18 +11,18 @@ public class ClaseSecundaria {
 
 	public String buscarNum (int num) {
 		
-		
+		boolean encontrar = false;
 		if(numeros.length == 0 || numeros == null) {
 			return "NO";
-			
 		}else{
 			for (int i = 0; i < numeros.length; i++) {
 				if(num == numeros[i]) {
 					return "SI";
+				
 				}
 			}
 		}
-		return "No se ha encontrado el numero";
+		return "Numero no encontrado";
 			
 		
 	}
