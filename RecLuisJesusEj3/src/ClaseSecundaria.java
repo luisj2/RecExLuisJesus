@@ -9,11 +9,12 @@ public class ClaseSecundaria {
 
 
 
-	public static String (int num,int[] numeros) {
+	public String buscarNum (int num) {
 		
 		
 		if(numeros.length == 0 || numeros == null) {
 			return "NO";
+			
 		}else{
 			for (int i = 0; i < numeros.length; i++) {
 				if(num == numeros[i]) {
@@ -21,6 +22,7 @@ public class ClaseSecundaria {
 				}
 			}
 		}
+		return "No se ha encontrado el numero";
 			
 		
 	}
